@@ -1,0 +1,93 @@
+/* 
+универсальный селектор
+селектор тега (элемента)
+селектор id
+селектор класса
+селектор аттрибута
+селектор потомка
+дочерний селектор
+*/
+
+/* Универсальный селектор */
+/* * {
+  color: tomato;
+} */
+
+/* Селектор тега */
+/* h1 {
+  color: tomato;
+}
+
+p {
+  color: teal;
+} */
+
+/* Селектор id */
+/* #main-title {
+  color: tomato;
+}
+
+#description {
+  color: teal;
+}
+
+#secondary-description {
+  color: teal;
+} */
+
+/* Селектор класса */
+/* .text {
+  color: tomato;
+} */
+
+/* Селектор аттрибута */
+/* [href="https://www.google.com/"]
+{
+  color: tomato;
+} */
+
+/* Cелектор потомка */
+/* .list .list-link {
+  color: tomato;
+} */
+
+/* Дочерний селектор */
+/* .list-item > .list-link {
+  color: tomato;
+} */
+
+/* Каскадность */
+/* 11 */
+/* body .text {
+  color: violet;
+} */
+
+/* 10 */
+/* .text {
+  color: tomato;
+} */
+
+/* 1 */
+/* p {
+  color: teal;
+} */
+
+/* 100 */
+/* #description {
+  color: yellowgreen;
+} */
+
+/* 0031 */
+/* body .list .list-item > .list-link {
+  color: tomato;
+} */
+
+/* Наследование */
+/* body {
+  font-size: 24px;
+  color: tomato;
+}
+
+a {
+  color: inherit;
+} */
