@@ -1,0 +1,340 @@
+:root {
+  --primary-font-family: 'Open Sans', sans-serif;
+  --secondary-font-family: 'Raleway', sans-serif;
+  --primary-text-color-theme-dark: 157, 164, 189;
+  --secondary-text-color-theme-dark: #ffffff;
+  --primary-text-color-theme-light: #555555;
+  --secondary-text-color-theme-light: #303030;
+  --accent-color: #ff6c00;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+body {
+  font-family: var(--primary-font-family);
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+/* =============== COMPONENTS =============== */
+.modal-btn {
+  min-width: 160px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  padding: 12px 19px;
+  cursor: pointer;
+
+  /* color: #ffffff; */
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+.social-links-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: #303030;
+}
+
+.social-links-link:hover,
+.social-links-link:focus {
+  color: var(--accent-color);
+}
+
+.suptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.suptitle-theme-light {
+  color: var(--secondary-text-color-theme-light);
+}
+
+.suptitle-theme-dark {
+  color: rgba(var(primary-text-color-theme-dark), 0.6);
+}
+
+.section-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.section-description-theme-dark {
+  color: rgb(var(--primary-text-color-theme-dark));
+}
+
+.section-description-theme-light {
+  color: var(--primary-text-color-theme-light);
+}
+
+.title {
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.67;
+  letter-spacing: 0.05em;
+}
+
+.title-theme-dark {
+  color: var(--secondary-text-color-theme-dark);
+  margin-bottom: 44px;
+}
+
+.title-theme-light {
+  color: var(--secondary-text-color-theme-light);
+  margin-bottom: 20px;
+}
+/* =============== /COMPONENTS =============== */
+
+/* =============== HEADER =============== */
+.page-header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 70px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.menu-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  /* color: #ffffff; */
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+
+.phone-number {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  margin-left: auto;
+  margin-right: 40px;
+
+  /* color: #ffffff; */
+}
+
+.phone-number:hover,
+.phone-number:focus {
+  color: var(--accent-color);
+}
+/* =============== /HEADER =============== */
+
+/* =============== HERO =============== */
+.main-title {
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+
+  /* color: #ffffff; */
+}
+/* =============== /HERO =============== */
+
+/* =============== ABOUT =============== */
+.about-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-theme-light);
+}
+/* =============== /ABOUT =============== */
+
+/* =============== SERVICES =============== */
+.services-list-name,
+.services-list-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: rgb(var(--primary-text-color-theme-dark));
+}
+/* =============== /SERVICES =============== */
+
+/* =============== ADVANTAGES =============== */
+.advantages-list-quantity {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--secondary-text-color-theme-light);
+}
+
+.advantages-list-description {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--secondary-text-color-theme-light);
+}
+/* =============== /ADVANTAGES =============== */
+
+/* =============== EMPLOYEES =============== */
+.employees-section {
+  background-color: #f7f7f7;
+}
+
+.employees-section-title {
+  margin-bottom: 44px;
+}
+
+.employees {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  /* justify-content: space-between; */
+}
+
+/* .employees-card:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.employees-card:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+} */
+
+.employees-card {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.employees-content-wrapper {
+  padding-top: 30px;
+}
+
+.employees-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color-theme-light);
+  margin-bottom: 8px;
+}
+
+.employees-position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+/* =============== /EMPLOYEES =============== */
+
+/* =============== GALLERY =============== */
+/* =============== /GALLERY =============== */
+
+/* =============== CONTACT INFO =============== */
+.contact-list-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: rgb(var(--primary-text-color-theme-dark));
+}
+.contact-info-date {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: rgb(var(--primary-text-color-theme-dark));
+}
+/* =============== /CONTACT INFO =============== */
+
+/* =============== FOOTER =============== */
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: rgb(var(--primary-text-color-theme-dark));
+}
+/* =============== /FOOTER =============== */
