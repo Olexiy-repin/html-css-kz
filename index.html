@@ -12,56 +12,67 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- HEADER  -->
     <header class="page-header">
-      <nav class="navigation">
-        <a class="logo" href="">
-          <img class="logo-img" src="./images/logo.svg" alt="логотип" width="68" height="56" />
-        </a>
-        <ul class="menu list">
-          <li class="menu-item">
-            <a class="menu-link link" href="#about">О нас</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link link" href="#services">Услуги и цены</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link link" href="#our-team">Мастера</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link link" href="#contacts">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <a class="phone-number link" href="tel:+380441111111">+38 044 111 11 11</a>
-      <button class="modal-btn" type="button">онлайн-запись</button>
+      <div class="container header-container">
+        <nav class="navigation">
+          <a class="logo" href="">
+            <img class="logo-img" src="./images/logo.svg" alt="логотип" width="68" height="56" />
+          </a>
+          <ul class="menu list">
+            <li class="menu-item">
+              <a class="menu-link link" href="#about">О нас</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href="#services">Услуги и цены</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href="#our-team">Мастера</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="phone-number link" href="tel:+380441111111">+38 044 111 11 11</a>
+        <button class="modal-btn" type="button">онлайн-запись</button>
+      </div>
     </header>
     <main>
       <!-- HERO -->
       <section class="hero">
-        <div class="hero-left-side">
-          <ul class="social-links list">
-            <li class="social-links-item">
-              <a class="social-links-link link" href="" lang="en">Instagram</a>
-            </li>
-            <li class="social-links-item">
-              <a class="social-links-link link" href="" lang="en">Youtube</a>
-            </li>
-          </ul>
-        </div>
-        <div class="hero-right-side">
-          <p class="suptitle" lang="en">A hair salon for men in Kyiv</p>
-          <h1 class="main-title" lang="en">BarberShop</h1>
-          <p class="section-description section-description-theme-dark">
-            Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
-          </p>
+        <div class="container">
+          <div class="hero-left-side">
+            <ul class="social-links list">
+              <li class="social-links-item">
+                <a class="social-links-link link" href="" lang="en">Instagram</a>
+              </li>
+              <li class="social-links-item">
+                <a class="social-links-link link" href="" lang="en">Youtube</a>
+              </li>
+            </ul>
+          </div>
+          <div class="hero-right-side">
+            <p class="suptitle" lang="en">A hair salon for men in Kyiv</p>
+            <h1 class="main-title" lang="en">BarberShop</h1>
+            <p class="section-description section-description-theme-dark">
+              Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
+            </p>
+          </div>
         </div>
       </section>
       <!-- ABOUT -->
-      <section class="about" id="about">
+      <section class="about container" id="about">
         <div class="about-left-side">
           <ul class="about-gallery list">
             <li class="about-gallery-item">
@@ -173,47 +184,55 @@
         </div>
       </section>
       <!-- OUR TEAM -->
-      <section class="employees-section" id="our-team">
-        <p class="suptitle suptitle-theme-light">для настоящих ценителей атмосферы</p>
-        <h2 class="title title-theme-light">Наши мастера</h2>
-        <ul class="employees list">
-          <li class="employees-card">
-            <img
-              class="employees-photo"
-              src="./images/our-team/jhon-smith.jpg"
-              alt="мастер стрижет клиента"
-              width="370"
-              height="346"
-            />
-            <h3 class="employees-name" lang="en">John Smith</h3>
-            <p class="employees-position" lang="en">Extreme Barber</p>
-          </li>
-          <li class="employees-card">
-            <img
-              class="employees-photo"
-              src="./images/our-team/michele-doe.jpg"
-              alt="мастер стрижет клиента"
-              width="370"
-              height="346"
-            />
-            <h3 class="employees-name" lang="en">Michele Doe</h3>
-            <p class="employees-position" lang="en">Extreme Barber</p>
-          </li>
-          <li class="employees-card">
-            <img
-              class="employees-photo"
-              src="./images/our-team/alan-black.jpg"
-              alt="мастер стрижет клиента"
-              width="370"
-              height="346"
-            />
-            <h3 class="employees-name" lang="en">Alan Black</h3>
-            <p class="employees-position" lang="en">Extreme Barber</p>
-          </li>
-        </ul>
+      <section class="employees-section section" id="our-team">
+        <div class="container">
+          <p class="suptitle suptitle-theme-light">для настоящих ценителей атмосферы</p>
+          <h2 class="title title-theme-light employees-section-title">Наши мастера</h2>
+          <ul class="employees list">
+            <li class="employees-card">
+              <img
+                class="employees-photo"
+                src="./images/our-team/jhon-smith.jpg"
+                alt="мастер стрижет клиента"
+                width="370"
+                height="346"
+              />
+              <div class="employees-content-wrapper">
+                <h3 class="employees-name" lang="en">John Smith</h3>
+                <p class="employees-position" lang="en">Extreme Barber</p>
+              </div>
+            </li>
+            <li class="employees-card">
+              <img
+                class="employees-photo"
+                src="./images/our-team/michele-doe.jpg"
+                alt="мастер стрижет клиента"
+                width="370"
+                height="346"
+              />
+              <div class="employees-content-wrapper">
+                <h3 class="employees-name" lang="en">Michele Doe</h3>
+                <p class="employees-position" lang="en">Extreme Barber</p>
+              </div>
+            </li>
+            <li class="employees-card">
+              <img
+                class="employees-photo"
+                src="./images/our-team/alan-black.jpg"
+                alt="мастер стрижет клиента"
+                width="370"
+                height="346"
+              />
+              <div class="employees-content-wrapper">
+                <h3 class="employees-name" lang="en">Alan Black</h3>
+                <p class="employees-position" lang="en">Extreme Barber</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- GALLERY -->
-      <section class="gallery">
+      <section class="gallery section">
         <h2 hidden>галерея работ</h2>
         <p class="suptitle suptitle-theme-light">На латинском языке “барба” означает “борода”</p>
         <ul class="gallery-list list">
