@@ -1,0 +1,17 @@
+.background {
+  width: 900px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 10px dashed rgba(255, 0, 0, 0.5);
+  color: #ffffff;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('https://picsum.photos/id/237/200/300');
+  background-size: cover;
+  /* background-repeat: no-repeat;
+  background-position: left top;
+  background-size: auto;
+  background-origin: border-box; */
+  /* background-clip: content-box; */
+}

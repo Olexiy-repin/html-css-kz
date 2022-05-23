@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+  outline: 1px solid #000;
+}
+
+.linear-gradient-block,
+.radial-gradient-block {
+  height: 200px;
+}
+
+.linear-gradient-block {
+  background-image: linear-gradient(180deg, tomato 0% 50%, teal 50% 75%, yellowgreen 75% 100%);
+  margin-bottom: 20px;
+}
+
+.radial-gradient-block {
+  background-image: radial-gradient(
+    circle at center,
+    tomato 0% 10%,
+    teal 10% 50%,
+    yellowgreen 50% 100%
+  );
+}
