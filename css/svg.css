@@ -26,6 +26,17 @@ body {
   height: 100vh;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 .footer {
   background-color: slategray;
   padding: 30px 0;
@@ -46,4 +57,30 @@ body {
   height: 50px;
   border-radius: 50%;
   background-color: #fff;
+
+  /* background-size: 32px 32px;
+  background-repeat: no-repeat;
+  background-position: center center; */
+}
+
+/* .social-list__item-link_facebook {
+  background-image: url('../images/facebook.svg');
+}
+
+.social-list__item-link_twitter {
+  background-image: url('../images/twitter.svg');
+}
+
+.social-list__item-link_telegram {
+  background-image: url('../images/telegram.svg');
+} */
+
+.social-list__img {
+  width: 32px;
+  height: 32px;
+}
+
+.social-list__item-link:hover .social-list__img,
+.social-list__item-link:focus .social-list__img {
+  fill: tomato;
 }
