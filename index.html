@@ -339,7 +339,7 @@
       <!-- GALLERY -->
       <section class="gallery section">
         <div class="container">
-          <h2 hidden>галерея работ</h2>
+          <h2 class="visually-hidden">галерея работ</h2>
           <p class="suptitle suptitle-theme-light gallery-suptitle">
             На латинском языке “барба” означает “борода”
           </p>
@@ -434,6 +434,55 @@
             <use href="./images/sprite.svg#close"></use>
           </svg>
         </button>
+        <form class="contact-form">
+          <label class="contact-form-field">
+            <span class="contact-form-field-span">Имя*</span>
+            <div class="contact-form-input-wrapper">
+              <input
+                class="contact-form-input"
+                type="text"
+                required
+                name="user_name"
+                minlength="2"
+              />
+              <span class="contact-form-icon"></span>
+            </div>
+          </label>
+          <label class="contact-form-field">
+            <span class="contact-form-field-span">Телефон*</span>
+            <div class="contact-form-input-wrapper">
+              <input
+                class="contact-form-input"
+                type="tel"
+                required
+                name="user_phone_number"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+              />
+              <span class="contact-form-icon"></span>
+            </div>
+          </label>
+          <label class="contact-form-field">
+            <span class="contact-form-field-span">Сообщение</span>
+            <textarea
+              class="contact-form-message"
+              name="user_message"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <input
+            class="contact-form-checkbox visually-hidden"
+            id="checkbox-policy"
+            type="checkbox"
+            name="user_policy"
+            required
+          />
+          <label class="contact-form-checkbox-label" for="checkbox-policy"
+            >Соглашаюсь с рассылкой и принимаю&nbsp;
+            <a class="contact-form-checkbox-link" href="">Условия договора</a></label
+          >
+          <button class="contact-form-btn" type="submit">отправить</button>
+        </form>
       </div>
     </div>
 
