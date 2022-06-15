@@ -1,34 +1,34 @@
 .suptitle {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 
-.suptitle::before {
+  &::before {
     display: block;
     width: 60px;
     height: 1px;
     content: '';
     margin-right: 20px;
+  }
 }
 
-.suptitle-theme-light {
-    color: var(--secondary-text-color-theme-light);
-}
+.suptitle_theme_light {
+  color: var(--secondary-text-color-theme-light);
 
-.suptitle-theme-light::before {
+  &::before {
     background-color: var(--secondary-text-color-theme-light);
+  }
 }
 
-.suptitle-theme-dark {
-    color: rgba(var(--primary-text-color-theme-dark), 0.6);
-}
+.suptitle_theme_dark {
+  color: rgba(var(--primary-text-color-theme-dark), 0.6);
 
-.suptitle-theme-dark::before {
+  &::before {
     background-color: rgba(var(--primary-text-color-theme-dark), 0.6);
+  }
 }

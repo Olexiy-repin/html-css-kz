@@ -95,9 +95,7 @@
 .contact-form-btn {
   min-width: 160px;
   align-self: center;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
+  @include font(12px, 600, 16px);
   letter-spacing: 0.09em;
   text-transform: uppercase;
   background-color: transparent;
