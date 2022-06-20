@@ -26,15 +26,62 @@ ol {
   list-style: none;
 }
 
-/* body {
+body {
   background-color: tomato;
-} */
+}
 
 /* ========== MIN-WIDTH MAX-WIDTH ========== */
+/* если ширина вьюпорта 400px или больше, применить правила внутри */
+/* @media (min-width: 400px) {
+  body {
+    background-color: teal;
+  }
+} */
+
+/* если ширина вьюпорта 768px или больше, применить правила внутри */
+/* @media (min-width: 768px) {
+  body {
+    background-color: yellowgreen;
+  }
+} */
+
+/* 0px - 767px */
+/* @media (max-width: 767px) {
+  body {
+    background-color: teal;
+  }
+} */
+
+/* 0px - 400px */
+/* @media (max-width: 400px) {
+  body {
+    background-color: yellowgreen;
+  }
+} */
 
 /* ========== AND ========== */
+/* 
+768px - 1199px
+
+768px+
+0px - 1199px
+*/
+/* @media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    background-color: teal;
+  }
+} */
 
 /* ========== OR ========== */
+/* 
+0px - 767px
+1200px+
+*/
+/* @media (max-width: 767px), (min-width: 1200px) {
+  body {
+    background-color: teal;
+  }
+} */
 
 /* ========== TYPES ========== */
 /* 
@@ -43,4 +90,36 @@ ol {
   print
 */
 
+/* @media screen and (min-width: 768px) {
+  body {
+    background-color: teal;
+  }
+}
+
+.section {
+  padding: 100px 0;
+}
+
+@media print {
+  .menu {
+    display: none;
+  }
+
+  .section {
+    font-size: 20px;
+    padding: 50px 0;
+  }
+} */
+
 /* ========== ORIENTATION ========== */
+/* @media screen and (orientation: landscape) and (max-width: 767px) {
+  body {
+    background-color: teal;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  body {
+    background-color: yellowgreen;
+  }
+} */
