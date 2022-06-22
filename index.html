@@ -46,15 +46,47 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-open-btn" data-menu-open>
+          <svg class="mobile-menu-open-btn__icon" width="40" height="40">
+            <use href="./images/sprite.svg#burger-icon"></use>
+          </svg>
+        </button>
         <a class="phone-number link" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="modal-btn modal-btn-theme-dark" type="button" data-modal-open>
+        <button
+          class="modal-btn modal-btn-theme-dark page-header__modal-btn"
+          type="button"
+          data-modal-open
+        >
           онлайн-запись
         </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/sprite.svg#close"></use>
+            </svg>
+          </button>
+          <ul class="list">
+            <li>
+              <a class="link" href="">link-1</a>
+            </li>
+            <li>
+              <a class="link" href="">link-2</a>
+            </li>
+            <li>
+              <a class="link" href="">link-3</a>
+            </li>
+            <li>
+              <a class="link" href="">link-4</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
       <!-- HERO -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container hero-container">
           <div class="hero-left-side">
             <ul class="social-links hero-social-links list">
@@ -74,9 +106,9 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- ABOUT -->
-      <section class="about section" id="about">
+      <!-- <section class="about section" id="about">
         <div class="container about-container">
           <div class="about-left-side">
             <ul class="about-gallery list">
@@ -115,9 +147,9 @@
             <button class="modal-btn modal-btn-theme-light" type="button">онлайн-запись</button>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- SERVICES -->
-      <section class="services section" id="services">
+      <!-- <section class="services section" id="services">
         <div class="container">
           <p class="suptitle suptitle_theme_dark">Проведи время в компании лучших мастеров</p>
           <h2 class="title title-theme-dark">Услуги и цены</h2>
@@ -164,9 +196,9 @@
             онлайн-запись
           </button>
         </div>
-      </section>
+      </section> -->
       <!-- ADVANTAGES -->
-      <section class="advantages section">
+      <!-- <section class="advantages section">
         <div class="container advantages-container">
           <div class="advantages-left-side">
             <ul class="advantages-list list">
@@ -197,9 +229,9 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- OUR TEAM -->
-      <section class="employees-section section" id="our-team">
+      <!-- <section class="employees-section section" id="our-team">
         <div class="container">
           <p class="suptitle suptitle_theme_light">для настоящих ценителей атмосферы</p>
           <h2 class="title title-theme-light employees-section-title">Наши мастера</h2>
@@ -335,9 +367,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- GALLERY -->
-      <section class="gallery section">
+      <!-- <section class="gallery section">
         <div class="container">
           <h2 class="visually-hidden">галерея работ</h2>
           <p class="suptitle suptitle_theme_light gallery-suptitle">
@@ -382,13 +414,13 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- CONTACT FORM -->
-      <section class="contact-form-section">
+      <!-- <section class="contact-form-section">
         <h2 class="title">Онлайн-запись</h2>
-      </section>
+      </section> -->
       <!-- OUR CONTACT INFORMATION -->
-      <section class="contact-info-section">
+      <!-- <section class="contact-info-section">
         <h2 class="title">Контакты</h2>
         <address>
           <ul class="contact-list list">
@@ -412,9 +444,9 @@
         </address>
         <h3 class="suptitle">время работы</h3>
         <p class="contact-info-date">Ежедневно с 9:00 до 22:00</p>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <p class="copyright">&#xa9; Copyright 2020</p>
         <ul class="social-links list">
@@ -426,8 +458,8 @@
           </li>
         </ul>
       </div>
-    </footer>
-    <div class="backdrop is-hidden" data-modal>
+    </footer> -->
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-btn-icon" width="18" height="18">
@@ -484,8 +516,9 @@
           <button class="contact-form-btn" type="submit">отправить</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
-    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
